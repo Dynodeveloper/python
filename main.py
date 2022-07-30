@@ -1,48 +1,51 @@
-print('buen dia, digite los siguientes datos para realizar la nomina')
+vuelta=-1
+while vuelta<10:
 
-print("Documento:")
+                 print('buen dia, digite los siguientes datos para realizar la nomina')
 
-D=int(input())
+                 print("Documento:")
 
-print("Nombres:")
+                 D=int(input())
 
-N=str(input())
+                 print("Nombres:")
 
-print("Apellidos:")
+                 N=str(input())
 
-A=str(input())
+                 print("Apellidos:")
 
-print("¿cual es su salario?")
+                 A=str(input())
 
-sl=int(input())
+                 print("¿cual es su salario?")
 
-print("¿cuantos dias trabajó?")
+                 sl=int(input())
 
-Dt=int(input())
+                 print("¿cuantos dias trabajó?")
 
-print("NOMINA")
+                 Dt=int(input())
 
-tr=117100/30
-sb=tr*Dt
-vld=sl/30
-st=vld*Dt
-dps=st*8/100
-st_d= int(st+sb-dps)
+                 print("NOMINA")
 
-print("El señor/a",N,A,"con numero de documento ",D,",que recibe por contrato el monto de ",sl,"y que trabajó",Dt,"dias el mes de julio, sumado al subsidio transporte por dias trabajados, y restando las prestaciones sociales, se le consigna un total de: ",st_d)
-file=open("nomina.txt" , "w")
-file.write("\n NOMINA \n \n")
-file.write("El señor/a : \n ")
-file.write(N )
-file.write( A)
-file.write(" \n con numero de documento: \n")
-file.write(' % s' %D)
-file.write("\n que recibe por contrato el monto de: \n ")
-file.write(' % s'%sl)
-file.write("\n y que trabajó")
-file.write(' % s' %Dt)
-file.write("  dias del presente mes, se le ha sumado el subsidio de transporte, siendo este de 171.100 pesos colombianos por ley, y restado el 8 por ciento de prestaciones sociales, se le realiza la consignacion total de: ")
-file.write("\n Mil gracias por la atencion prestada, puede guardar este archivo para cualquier reclamacion.")
+                 tr=117100/30
+                 sb=tr*Dt
+                 vld=sl/30
+                 st=vld*Dt
+                 dps=st*8/100
+                 st_d= int(st+sb-dps)
+
+                 print("El señor/a",N,A,"con numero de documento ",D,",que recibe por contrato el monto de ",sl,"y que trabajó",Dt,"dias el mes de julio, sumado al subsidio transporte por dias trabajados, y restando las prestaciones sociales, se le consigna un total de: ",st_d)
+                 file=open("nomina.txt" , "w")
+                 file.write("\n NOMINA \n \n")
+                 file.write("El señor/a : \n ")
+                 file.write(N )
+                 file.write( A)
+                 file.write(" \n con numero de documento: \n")
+                 file.write(' % s' %D)
+                 file.write("\n que recibe por contrato el monto de: \n ")
+                 file.write(' % s'%sl)
+                 file.write("\n y que trabajó")
+                 file.write(' % s' %Dt)
+                 file.write("  dias del presente mes, se le ha sumado el subsidio de transporte, siendo este de 171.100 pesos colombianos por ley, y restado el 8 por ciento de prestaciones sociales, se le realiza la consignacion total de: ")
+                 file.write("\n Mil gracias por la atencion prestada, puede guardar este archivo para cualquier reclamacion.")
 
 
-file.close()
+                 file.close()
