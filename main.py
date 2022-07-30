@@ -1,7 +1,9 @@
 vuelta=-1
 while vuelta<10:
 
-                 print('buen dia, digite los siguientes datos para realizar la nomina')
+                 print("\n PROGRAMA CREACION DE NOMINA \n")
+
+                 print('buen dia, digite los siguientes datos para realizar la nomina \n')
 
                  print("Documento:")
 
@@ -32,7 +34,7 @@ while vuelta<10:
                  dps=st*8/100
                  st_d= int(st+sb-dps)
 
-                 print("El señor/a",N,A,"con numero de documento ",D,",que recibe por contrato el monto de ",sl,"y que trabajó",Dt,"dias el mes de julio, sumado al subsidio transporte por dias trabajados, y restando las prestaciones sociales, se le consigna un total de: ",st_d)
+                 print("El señor/a",N,A,"con numero de documento ",D,",que recibe por contrato el monto de ",sl,"y que trabajó",Dt,"dias el mes de julio, sumado al subsidio transporte por dias trabajados, y restando las prestaciones sociales, se le consigna un total de: ",st_d, "en este momento se le habrá descargado un archivo en la carpeta del programa con la informacion correspondiente.")
                  file=open("nomina.txt" , "w")
                  file.write("\n NOMINA \n \n")
                  file.write("El señor/a : \n ")
